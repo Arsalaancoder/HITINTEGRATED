@@ -1,0 +1,202 @@
+/* --- RESPONSIVE STYLINGS --- */
+
+/* Desktop & Large Screen Adjustments */
+@media (min-width: 1440px) {
+    .container {
+        max-width: 1360px;
+    }
+}
+
+/* Medium Desktop & Laptops */
+@media (max-width: 1200px) {
+    .footer-grid {
+        gap: 2.5rem;
+    }
+}
+
+/* Tablets (Landscape & Portrait) */
+@media (max-width: 1024px) {
+    .nav-menu, .nav-cta {
+        display: none; /* Hide desktop nav and show hamburger */
+    }
+    
+    .hamburger {
+        display: flex;
+    }
+    
+    .grid-4 {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+    
+    .grid-3 {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    .ai-business-section {
+        background-position: 62% center;
+    }
+
+    .capability-paper-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .service-showcase-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+    
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3rem;
+    }
+    
+    .floating-social-widget {
+        right: 1rem;
+    }
+    
+    .floating-social-btn {
+        width: 46px;
+        height: 46px;
+    }
+}
+
+/* Small Tablets & Mobile Landscape */
+@media (max-width: 768px) {
+    .section {
+        padding-block: clamp(3rem, 6vw, 5rem);
+    }
+    
+    .grid-2 {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+    }
+    
+    .grid-3 {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .design-image-frame {
+        border-radius: var(--radius-md);
+    }
+
+    .capability-paper-grid,
+    .service-showcase-grid {
+        grid-template-columns: 1fr;
+        max-width: 420px;
+        margin-inline: auto;
+    }
+
+    .paper-card-sheet {
+        min-height: 245px;
+    }
+
+    .ai-business-section {
+        min-height: auto;
+        background-image:
+            linear-gradient(180deg, rgba(255, 255, 255, 0.98) 0%, rgba(255, 255, 255, 0.94) 58%, rgba(255, 255, 255, 0.62) 100%),
+            url('../assets/images/business-intelligence-forward.png');
+        background-position: 70% center;
+        padding-block: clamp(4rem, 12vw, 6rem);
+    }
+
+    .ai-business-section .grid-2 {
+        grid-template-columns: 1fr;
+    }
+
+    .ai-business-section [style*="grid-template-columns: repeat(2, 1fr)"] {
+        grid-template-columns: 1fr !important;
+    }
+    
+    .announcement-links {
+        display: none; /* Hide announcement social links on mobile to save space */
+    }
+    
+    .announcement-bar .container {
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+    }
+    
+    .footer-bottom {
+        flex-direction: column;
+        gap: 1.5rem;
+        text-align: center;
+    }
+    
+    .footer-bottom-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
+}
+
+/* Small Mobile Screen Adjustments */
+@media (max-width: 480px) {
+    .container {
+        width: 92%;
+    }
+    
+    .grid-4 {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .btn {
+        width: 100%;
+        padding-block: 0.85rem;
+    }
+
+    .capabilities-design-section .section-header {
+        margin-bottom: 1.75rem;
+    }
+    
+    .inner-hero {
+        padding-top: 5rem;
+        padding-bottom: 3.5rem;
+    }
+    
+    .breadcrumb {
+        flex-wrap: wrap;
+        gap: 0.3rem;
+    }
+    
+    .floating-social-widget {
+        right: 0.75rem;
+        gap: 0.5rem;
+    }
+    
+    .floating-social-btn {
+        width: 42px;
+        height: 42px;
+    }
+    
+    .floating-social-btn::before,
+    .floating-social-btn::after {
+        display: none !important; /* Hide tooltips on touch screens */
+    }
+    
+    .back-to-top {
+        left: 0.75rem;
+        bottom: 0.75rem;
+        width: 40px;
+        height: 40px;
+    }
+}
+
+/* Specific viewports requested in criteria */
+@media (min-width: 1920px) {
+    .container {
+        max-width: 1600px;
+    }
+    
+    body {
+        font-size: 18px;
+    }
+}
